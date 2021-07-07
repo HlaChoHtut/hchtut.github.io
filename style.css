@@ -1,0 +1,10 @@
+html, body {
+    margin: 0 auto;
+}
+.hero {
+    display: flex;
+}
+
+.hero-img {
+    margin: 2em;
+}
