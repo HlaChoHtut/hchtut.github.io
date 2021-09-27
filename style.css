@@ -1,136 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+:root {
+    --main-bg-color: #191919;
+    --text-color: #00FFE5;
+    --second-color: #FFE500;
+}
 
-html, body {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #070707;
+html, body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto Mono', monospace;
 }
 
-section {
-    margin: 3em 2em;
+p {
+    margin-top: 0;
 }
 
-.hero-text {
-    color: #fff;
-    font-size: 1em;
-}
-
-.hero-text span {
-    color: #ffd21e;
-    font-size: 2em;
-    display: block;
-}
-
-.hero-text .intro {
-    text-align: justify;
-}
-
-ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 2em 0;
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 ul li {
     list-style-type: none;
 }
 
-ul li a {
-    text-decoration: none;
-    margin-right: 1em;
-    font-size: 2em;
-    color: #fff;
+.container {
+    margin: 3em 5em 0;
+    position: relative;
 }
 
-.fab:hover {
-    color: #fff;
+.container::after {
+    content: '';
+    position: absolute; 
+    top:  25px;
+    left: 38.4px;
+    height: 100%;
+    width: 4px;
+    background: var(--text-color);
 }
 
-img {
-    width: 100%;
-    border-radius: 20px;
+.logo {
+    color: var(--text-color);
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 0;
 }
 
-.project-section {
-    margin-bottom: 5em;
-}
-
-.project {
-    color: #fff;
-    text-align: center;
-    margin-top: 2em;
-    padding: 2em;
-    background-color: #121516;
-    border-radius: 20px;
-}
-
-.project:hover{
-    box-shadow: 5px 10px 20px rgba(253, 235, 69, 0.2);
-}
-
-h1 {
-    font-weight: bold;
-    font-size: 2em;
-    margin-bottom: .8em;
-}
-
-.cta {
-    display: inline-block;
-    margin-top: .8em;
-    padding: .5em 1em;
-    color: #000;
-    font-weight: bold;
-    background-color: #ffd21e;
-    text-decoration: none;
+.title {
     font-size: 1.2em;
 }
-.cta:hover,
-.cta.focus {
-    color: #000;
+
+.home {
+    height: 100vh;
+    margin-top: 2em;
+    padding-left: 3em;
+}
+
+.intro {
+    width: 60%;
+    margin-top: 1em;
+}
+
+.intro-page {
+    margin-top: 4em;
+    position: relative;
+    /* border: 1px solid #FFE500; */
+}
+
+.name {
+    color: var(--second-color);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.home, 
+.portfolio, 
+.about,
+.tech,
+.contact {
+    margin-left: 3em;
+}
+
+#portfolio, 
+#about, 
+#tech, 
+#contact {
+    border: 3px solid var(--second-color);
+    border-radius: 5px;
+    padding: .5em 1em;
+    display: inline-block;
+    margin-top: 2em;
+}
+
+#portfolio {
+    margin-left: 8em;
+}
+
+#about {
+    margin-left: 30em;
+}
+
+#tech {
+    margin-left: 20em;
+}
+
+#contact {
+    margin-left: 5em;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.project1, .project2 {
+    width: 500px;
+    border: 1px solid red;
 }
 
 .about {
-    color: #FFF;
-    background-color: #121516;
-    padding: 2em;
-    border-radius: 20px;
+    border: 1px solid red;
+    margin-bottom: 4em;
 }
 
-.about-me p {
-    text-align: justify;
+.tech {
+    border: 1px solid red;
+    margin-bottom: 4em;
 }
 
-@media (min-width: 650px) {
-    section {
-        margin: 5em;
-    }
-
-    .hero {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .hero-text {
-        color: #FFF;
-        padding-right: 2em;
-        font-size: 1em;
-        letter-spacing: 2px;
-    }
-
-    .hero-text span {
-        font-size: 2em;
-        display: block;
-        color: #ffd21e;
-        font-weight: bold;
-    }
-    .hero-img img {
-        border-radius: 20px;
-        width: 300px;
-    }
+.tech-list {
+    display: flex;
+    justify-content: space-around;
 }
 
+.tech-icon {
+    width: 80px;
+}
+
+.hide {
+    display: none;
+}
+    
+.myDIV:hover + .hide {
+    display: block;
+    color: red;
+}
