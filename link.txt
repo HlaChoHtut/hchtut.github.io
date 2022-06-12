@@ -1,0 +1,148 @@
+<!-- <h2>Tech I use</h2>
+<ul class="tech-list">
+	<li class="tech-icon"><img src="https://johno-m.web.app/img/HTML-logo.5434d656.svg" alt=""></li>
+	<li class="tech-icon"><img src="https://johno-m.web.app/img/CSS-logo.94801ff5.svg" alt=""></li>
+	<li class="tech-icon"><img src="https://johno-m.web.app/img/JS-logo.3d9ff557.svg" alt=""></li>
+	<li class="tech-icon"><img src="https://johno-m.web.app/img/React-icon.29d40460.svg" alt=""></li>
+	<li class="tech-icon"><img src="https://johno-m.web.app/img/VSCode-icon.f33229c6.svg" alt="vscode"></li>
+	<li class="tech-icon"><img src="https://johno-m.web.app/img/Photoshop-icon.9da6c5f9.svg" alt=""></li>
+	<!-- <li><img src="" alt=""></li>
+	<li><i class="fab fa-github"></i></li>
+	<li><i class="fab fa-figma"></i></li> 
+</ul> -->
+
+p {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.container {
+    margin: 3em 5em 0;
+    position: relative;
+}
+
+.container::after {
+    content: '';
+    position: absolute; 
+    top:  25px;
+    left: 38.4px;
+    height: 100%;
+    width: 4px;
+    background: var(--text-color);
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.home {
+    height: 100vh;
+    margin-top: 2em;
+    padding-left: 3em;
+}
+
+.intro {
+    width: 60%;
+    margin-top: 1em;
+}
+
+.intro-page {
+    margin-top: 4em;
+    position: relative;
+    /* border: 1px solid #FFE500; */
+}
+
+.name {
+    color: var(--second-color);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.home, 
+.portfolio, 
+.about,
+.tech,
+.contact {
+    margin-left: 3em;
+}
+
+#portfolio, 
+#about, 
+#tech, 
+#contact {
+    border: 3px solid var(--second-color);
+    border-radius: 5px;
+    padding: .5em 1em;
+    display: inline-block;
+    margin-top: 2em;
+}
+
+#portfolio {
+    margin-left: 8em;
+}
+
+#about {
+    margin-left: 30em;
+}
+
+#tech {
+    margin-left: 20em;
+}
+
+#contact {
+    margin-left: 5em;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.project1, .project2 {
+    width: 500px;
+    border: 1px solid red;
+}
+
+.about {
+    border: 1px solid red;
+    margin-bottom: 4em;
+}
+
+.tech {
+    border: 1px solid red;
+    margin-bottom: 4em;
+}
+
+.tech-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tech-icon {
+    width: 80px;
+}
+
+.hide {
+    display: none;
+}
+    
+.myDIV:hover + .hide {
+    display: block;
+    color: red;
+}
